@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "my_shortcut_key"
+version = "0.1.0"
+description = ""
+authors = ["Ryuta Uematsu <r.resolute.pro@gmali.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "^0.18.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
