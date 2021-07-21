@@ -1,23 +1,29 @@
+import pyaudio
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
 # ショートカットキー 設定
-SHOURTCUTS= [
+SHOURTCUTS = [
     {
-    'operation': "Aircon on",
-    'hot-keys': ['CTRL', 'A', 'UP'],   # 必ずキーは3つで設定する
-    'function': 'aircon_on'
+        'operation': "Aircon on",
+        'hot-keys': ['CTRL', 'A', 'UP'],   # 必ずキーは3つで設定する
+        'function': 'aircon_on'
     },
     {
-    'operation': "Aircon off",
-    'hot-keys': ['CTRL', 'A', 'DOWN'],
-    'function': 'aircon_off'
+        'operation': "Aircon off",
+        'hot-keys': ['CTRL', 'A', 'DOWN'],
+        'function': 'aircon_off'
     },
     {
-    'operation': "Light on",
-    'hot-keys': ['CTRL', 'SHIFT', 'L'],
-    'function': 'room_light_power'
+        'operation': "Light on",
+        'hot-keys': ['CTRL', 'SHIFT', 'L'],
+        'function': 'room_light_power'
+    },
+    {
+        'operation': "Light on",
+        'hot-keys': ['CTRL', 'ALT', 'SPACE'],
+        'function': 'input_from_mic',
     }
 ]
 
@@ -118,7 +124,7 @@ KEYS = {
     'RSHIFT': 161,
     'CTRL': 162,
     'RCTRL': 163,
-    'LALT': 164,
+    'ALT': 164,
     'RALT': 165,
     'COLON': 186,
     'EQUALS': 187,
@@ -134,3 +140,22 @@ KEYS = {
     'TILDE': 223,
     'ENTER': 0x0D
 }
+
+# pyaudio settings
+PYAUDIO_RATE = 16000
+PYAUDIO_CHUNK = int(PYAUDIO_RATE/10)
+PYAUDIO_FORMAT = pyaudio.paInt16
+PYAUDIO_CHANNELS = 1
+PYAUDIO_DEVICE_INDEX = 1
+
+# GCP Speach to text settings
+from google.cloud import speech_v1p1beta1 as speech
+SST_LANG = 'ja-JP'
+SST_BOOT_WARD = [
+    {"phrases": ["入力","検索"], "boost":12}
+]
+SST_METADATA = {
+        "interaction_type": speech.RecognitionMetadata.InteractionType.VOICE_COMMAND,
+        "recording_device_type": speech.RecognitionMetadata.RecordingDeviceType.PC,
+                        }
+SST_MODEL = 'command_and_search'
