@@ -22,8 +22,8 @@ SHOURTCUTS = [
     },
     {
         'operation': "Light on",
-        'hot-keys': ['CTRL', 'SHIFT', 'SPACE'],
-        'function': 'input_from_mic'
+        'hot-keys': ['CTRL', 'ALT', 'SPACE'],
+        'function': 'input_from_mic',
     }
 ]
 
@@ -124,7 +124,7 @@ KEYS = {
     'RSHIFT': 161,
     'CTRL': 162,
     'RCTRL': 163,
-    'LALT': 164,
+    'ALT': 164,
     'RALT': 165,
     'COLON': 186,
     'EQUALS': 187,
@@ -151,10 +151,11 @@ PYAUDIO_DEVICE_INDEX = 1
 # GCP Speach to text settings
 from google.cloud import speech_v1p1beta1 as speech
 SST_LANG = 'ja-JP'
-BOOT_WARD = [
+SST_BOOT_WARD = [
     {"phrases": ["入力","検索"], "boost":12}
 ]
-METADATA = {
+SST_METADATA = {
         "interaction_type": speech.RecognitionMetadata.InteractionType.VOICE_COMMAND,
         "recording_device_type": speech.RecognitionMetadata.RecordingDeviceType.PC,
                         }
+SST_MODEL = 'command_and_search'
