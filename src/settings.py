@@ -42,7 +42,7 @@ SHOURTCUTS = [
     },
     {
         'operation': "Projector power",
-        'hot-keys': ['CTRL', 'SHIFT', 'P'],
+        'hot-keys': ['CTRL', 'ALT', 'P'],
         'function': 'projector_power',
     }
 ]
