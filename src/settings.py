@@ -16,6 +16,16 @@ SHOURTCUTS = [
         'function': 'aircon_off'
     },
     {
+        'operation': "Aircon off",
+        'hot-keys': ['CTRL', 'A', 'NUM1'],
+        'function': 'aircon_volume_1'
+    },
+    {
+        'operation': "Aircon off",
+        'hot-keys': ['CTRL', 'A', 'NUM3'],
+        'function': 'aircon_volume_3'
+    },
+    {
         'operation': "Light on",
         'hot-keys': ['CTRL', 'L', 'O'],
         'function': 'room_light_on'
@@ -84,16 +94,16 @@ KEYS = {
     'LWIN': 91,
     'RWIN': 92,
     'MENU': 93,
-    'NUM0': 96,
-    'NUM1': 97,
-    'NUM2': 98,
-    'NUM3': 99,
-    'NUM4': 100,
-    'NUM5': 101,
-    'NUM6': 102,
-    'NUM7': 103,
-    'NUM8': 104,
-    'NUM9': 105,
+    'NUM0': 0x30,
+    'NUM1': 0x31,
+    'NUM2': 0x32,
+    'NUM3': 0x33,
+    'NUM4': 0x34,
+    'NUM5': 0x35,
+    'NUM6': 0x36,
+    'NUM7': 0x37,
+    'NUM8': 0x38,
+    'NUM9': 0x39,
     'MULTIPLY': 106,
     'ADD': 107,
     'SUBTRACT': 109,
