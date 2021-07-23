@@ -44,6 +44,11 @@ SHOURTCUTS = [
         'operation': "Projector power",
         'hot-keys': ['CTRL', 'ALT', 'P'],
         'function': 'projector_power',
+    },
+    {
+        'operation': "start edge app",
+        'hot-keys': ['CTRL', 'SHIFT', 'E'],
+        'function': 'start_edge',
     }
 ]
 
@@ -179,3 +184,6 @@ SST_METADATA = {
         "recording_device_type": speech.RecognitionMetadata.RecordingDeviceType.PC,
                         }
 SST_MODEL = 'command_and_search'
+
+# Edge path
+EDGE_PATH = os.environ['EDGE_PATH']
