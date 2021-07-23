@@ -17,8 +17,13 @@ SHOURTCUTS = [
     },
     {
         'operation': "Light on",
-        'hot-keys': ['CTRL', 'SHIFT', 'L'],
-        'function': 'room_light_power'
+        'hot-keys': ['CTRL', 'L', 'O'],
+        'function': 'room_light_on'
+    },
+    {
+        'operation': "Light off",
+        'hot-keys': ['CTRL', 'L', 'F'],
+        'function': 'room_light_off'
     },
     {
         'operation': "Light on",
