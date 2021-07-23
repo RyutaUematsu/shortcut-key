@@ -3,6 +3,7 @@ import time
 from recognizer.trigger import operation
 from functions.nature_remo.aircon import aircon_on, aircon_off, aircon_volume_1, aircon_volume_3
 from functions.nature_remo.room_right import room_light_on, room_light_off
+from functions.nature_remo.projector import projector_power
 from functions.operate_windows.key_board import input_from_mic
 
 

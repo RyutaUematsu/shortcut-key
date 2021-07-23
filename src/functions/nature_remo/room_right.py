@@ -1,6 +1,6 @@
 import time 
 
-from functions.nature_remo.nature_remo_api import client, getAppliances, ROOM_LIGHT_NAME, api
+from functions.nature_remo.nature_remo_api import getAppliances, ROOM_LIGHT_NAME, api
 
 
 def room_light_power():

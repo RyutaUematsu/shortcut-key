@@ -16,12 +16,12 @@ SHOURTCUTS = [
         'function': 'aircon_off'
     },
     {
-        'operation': "Aircon off",
+        'operation': "Aircon volume 1",
         'hot-keys': ['CTRL', 'A', 'NUM1'],
         'function': 'aircon_volume_1'
     },
     {
-        'operation': "Aircon off",
+        'operation': "Aircon volume 3",
         'hot-keys': ['CTRL', 'A', 'NUM3'],
         'function': 'aircon_volume_3'
     },
@@ -36,9 +36,14 @@ SHOURTCUTS = [
         'function': 'room_light_off'
     },
     {
-        'operation': "Light on",
+        'operation': "input from mic",
         'hot-keys': ['CTRL', 'ALT', 'SPACE'],
         'function': 'input_from_mic',
+    },
+    {
+        'operation': "Projector power",
+        'hot-keys': ['CTRL', 'SHIFT', 'P'],
+        'function': 'projector_power',
     }
 ]
 
