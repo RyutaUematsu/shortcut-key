@@ -8,4 +8,4 @@ def is_pressed(key: str):
         return True
 
 def is_pressed_hot_kay(keys: List):
-    return all([is_pressed(KEYS[keys[0]]),is_pressed(KEYS[keys[1]]),is_pressed(KEYS[keys[2]])])
+    return all([is_pressed(KEYS[key]) for key in keys])

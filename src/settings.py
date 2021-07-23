@@ -7,7 +7,7 @@ load_dotenv()
 SHOURTCUTS = [
     {
         'operation': "Aircon on",
-        'hot-keys': ['CTRL', 'A', 'UP'],   # 必ずキーは3つで設定する
+        'hot-keys': ['CTRL', 'A', 'UP'],
         'function': 'aircon_on'
     },
     {
