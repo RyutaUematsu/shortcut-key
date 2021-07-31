@@ -49,6 +49,11 @@ SHOURTCUTS = [
         'operation': "start edge app",
         'hot-keys': ['CTRL', 'SHIFT', 'E'],
         'function': 'start_edge',
+    },
+    {
+        'operation': "window catch",
+        'hot-keys': ['SPACE', 'V', 'C'],
+        'function': 'window_catch',
     }
 ]
 
