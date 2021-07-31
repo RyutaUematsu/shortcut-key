@@ -5,6 +5,7 @@ from functions.nature_remo.aircon import aircon_on, aircon_off, aircon_volume_1,
 from functions.nature_remo.room_right import room_light_on, room_light_off
 from functions.nature_remo.projector import projector_power
 from functions.operate_windows.key_board import input_from_mic
+from functions.operate_windows.app_window import window_catch
 from functions.windows_app.edge.operation_edge import start_edge
 
 
