@@ -52,8 +52,9 @@ SHOURTCUTS = [
     },
     {
         'operation': "window catch",
-        'hot-keys': ['SPACE', 'V', 'C'],
+        'hot-keys': ['CTRL','SPACE'],
         'function': 'window_catch',
+        'interval_skip': True
     }
 ]
 

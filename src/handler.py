@@ -34,9 +34,13 @@ def main():
             function = ope['function']
             print(function)
             print('\rProcessing...', end="")
-            globals()[function]()
+            try:
+                globals()[function]()
+            except:
+                pass
             print('\rComplete!    ', end='')
-            time.sleep(3)
+            if not ope.get('interval_skip'):
+                time.sleep(3)
 
 if __name__ == '__main__':
     main()
