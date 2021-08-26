@@ -23,7 +23,7 @@ def move_window(target) -> int:
     while is_pressed_hot_kay(keys):
         x,y = autogui.position()
         x = int(round(x-w/2,0))
-        y = int(round(y-h/2,0))
+        y = int(round(y-h/2,0)) 
         target.moveTo(x,y)
         x,y = autogui.position()
     return x,y
@@ -70,7 +70,7 @@ def window_catch():
     # すべてのウインドをチェックする
     all_window = getwindow.getAllWindows()
     for win in window_state:
-        if not win in all_window:
+        if not win in all_window and not win.isMinimized:
             window_state.remove(win)
             window_aggregate()
         

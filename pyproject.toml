@@ -8,6 +8,7 @@ authors = ["Ryuta Uematsu <r.resolute.pro@gmali.com>"]
 python = "^3.8"
 python-dotenv = "^0.18.0"
 nature-remo = "^0.3.3"
+PyGetWindow = "^0.0.9"
 
 [tool.poetry.dev-dependencies]
 

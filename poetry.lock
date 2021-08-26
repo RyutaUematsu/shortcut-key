@@ -58,6 +58,25 @@ marshmallow = "3.7.1"
 requests = "2.24.0"
 
 [[package]]
+name = "pygetwindow"
+version = "0.0.9"
+description = "A simple, cross-platform module for obtaining GUI information on application's windows."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pyrect = "*"
+
+[[package]]
+name = "pyrect"
+version = "0.1.4"
+description = "PyRect is a simple module with a Rect class for Pygame-like rectangular areas."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "python-dotenv"
 version = "0.18.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -102,7 +121,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "7c1584e4840f706114fedfaf986e7b7c1920383f4ad8434216ebb867afad568b"
+content-hash = "42c85709c98c65f162de38ac233ca7e8eaee58feec3153b33057c674757a1a26"
 
 [metadata.files]
 certifi = [
@@ -128,6 +147,12 @@ marshmallow = [
 nature-remo = [
     {file = "nature-remo-0.3.3.tar.gz", hash = "sha256:a3034183a6ec0d74dfc7bb9b3bf72cf922fe8593f85726b1cf7887cb3fad2106"},
     {file = "nature_remo-0.3.3-py3-none-any.whl", hash = "sha256:552bd28361875c61a0bfbc91e2ac079f7f5ad122017eace9427169984b744e0d"},
+]
+pygetwindow = [
+    {file = "PyGetWindow-0.0.9.tar.gz", hash = "sha256:17894355e7d2b305cd832d717708384017c1698a90ce24f6f7fbf0242dd0a688"},
+]
+pyrect = [
+    {file = "PyRect-0.1.4.tar.gz", hash = "sha256:3b2fa7353ce32a11aa6b0a15495968d2a763423c8947ae248b92c037def4e202"},
 ]
 python-dotenv = [
     {file = "python-dotenv-0.18.0.tar.gz", hash = "sha256:effaac3c1e58d89b3ccb4d04a40dc7ad6e0275fda25fd75ae9d323e2465e202d"},
