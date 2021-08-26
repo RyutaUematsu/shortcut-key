@@ -36,11 +36,11 @@ def main():
             print('\rProcessing...', end="")
             try:
                 globals()[function]()
-            except:
-                pass
+            except Exception as e:
+                print(e)
             print('\rComplete!    ', end='')
             if not ope.get('interval_skip'):
                 time.sleep(3)
 
 if __name__ == '__main__':
-    main()
+    main()      
